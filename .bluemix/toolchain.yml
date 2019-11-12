@@ -9,7 +9,7 @@ template:
     #$ref: "#/messages/template.description"
     #template descriptions now vary depending on the flavor of source provider selected
     $ref: >
-      $env.source_provider === 'githubconsolidated' ? 
+      $env.source_provider === 'github' ? 
       '#/messages/template.description.github' : '#/messages/template.description'
   header: '![](toolchain.svg?localize)'
   icon: icon.svg
